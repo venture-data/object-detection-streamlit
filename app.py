@@ -47,11 +47,9 @@ net = load_model(model_architecture_path, model_weights_path)
 #############################
 
 
-
-
 # Define classes to be detected
 classes = []
-with open("D:/Statifi/object detection yolo/coco.names", "r") as f:
+with open("coco.names", "r") as f:
     classes = [line.strip() for line in f.readlines()]
 
 # Set minimum confidence threshold and non-maximum suppression threshold
