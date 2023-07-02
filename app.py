@@ -7,7 +7,7 @@ import tempfile
 import os
 
 # Streamlit app
-st.title("Object Detection using YOLOv3")
+st.title("Object Detection")
 
 # Load YOLOv3 model and configuration files
 # net = cv2.dnn.readNet("D:/Statifi/object detection yolo/yolov3.weights", "D:/Statifi/object detection yolo/yolov3.cfg")
