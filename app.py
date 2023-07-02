@@ -53,8 +53,8 @@ with open("coco.names", "r") as f:
     classes = [line.strip() for line in f.readlines()]
 
 # Set minimum confidence threshold and non-maximum suppression threshold
-conf_threshold = st.slider("Confidence Threshold", 0.0, 1.0, 0.5, 0.01)
-nms_threshold = st.slider("NMS Threshold", 0.0, 1.0, 0.4, 0.01)
+conf_threshold = st.slider("Model Confidence", 0.0, 1.0, 0.5, 0.01)
+nms_threshold = st.slider("Non-Maximum Suppression (NMS)", 0.0, 1.0, 0.4, 0.01)
 
 # Load image and display
 img_path = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
